@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Parkinsans:wght@300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+p,
+a,
+h1,
+h5 {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar {
+  border-bottom: 1px solid #f1f1f1;
+  font-weight: bold;
+  background-color: white;
+}
+
+.navbar-brand {
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nav-link {
+  color: black;
+  text-decoration: none;
+}
+
+.button-outline {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  font-weight: normal;
+}
+
+.button-fill {
+  padding: 10px;
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  font-weight: normal;
+}
+
+.isi {
+  margin-top: 9%;
+}
+
+#testimonialSlider {
+  display: flex;
+  overflow-x: scroll;
+  gap: 30px; /* Jarak antar testimonial */
+  padding: 20px;
+}
+
+.text-judul {
+  font-weight: bold;
+}
+
+.text-sub-judul {
+  margin: 20px 0px 30px 0px;
+}
+
+.testimonial-card {
+  margin-top: 60px;
+  flex: 0 0 auto;
+  border: 1px solid black;
+  transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+  padding: 20px;
+  user-select: none;
+}
+
+.testimonial-slider::-webkit-scrollbar {
+  height: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.testimonial-card.active {
+  transform: scale(1.1); /* Membesarkan testimonial yang aktif */
+  z-index: 10; /* Agar testimonial yang aktif tetap di atas */
+}
+
+.testimonial-card h5 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.testimonial-card p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.usn {
+  margin-top: -10px;
+}
+
+.footer {
+  margin-top: 50px;
+}
+
+@media (max-width: 767px) {
+  .isi {
+    margin-top: 30%;
+  }
+  .testimonial-card.active {
+    transform: scale(1.05);
+  }
+}
